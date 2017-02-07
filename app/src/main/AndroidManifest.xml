@@ -15,12 +15,8 @@
                  android:theme="@style/AppTheme"
                  android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
         <receiver android:name="com.carl.touch.BootCompletedReceiver">
-                  <!--android:permission="android.permission.BIND_DEVICE_ADMIN">-->
-            <!--<meta-data android:name="android.app.device_admin"-->
-                       <!--android:resource="@xml/my_admin"/>-->
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <!--<action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>-->
             </intent-filter>
         </receiver>
 
@@ -53,7 +49,7 @@
 
 
         <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
-        <activity android:name=".LockScreenActivity"
+        <activity android:name="com.carl.touch.LockScreenActivity"
                   android:theme="@android:style/Theme.Translucent.NoTitleBar">
 
             <intent-filter>
